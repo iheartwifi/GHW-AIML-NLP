@@ -26,7 +26,7 @@ def preprocess_text(text):
 
 
 # download nltk corpus (first time only)
-nltk.download('all')
+# nltk.download('all')
 
 # Load the amazon review dataset
 df = pd.read_csv('https://raw.githubusercontent.com/pycaret/pycaret/master/datasets/amazon.csv')

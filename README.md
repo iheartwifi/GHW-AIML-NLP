@@ -1,2 +1,2 @@
 # GHW-AIML-NLP
-Learn how to hack NLP app
+Learning how to hack NLP app
