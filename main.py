@@ -5,14 +5,17 @@ import seaborn as sns
 from sklearn.feature_extraction.text import CountVectorizer
 
 sns.set_style("whitegrid")
-plt.sytle.us("fivethirtyeight")
+plt.style.use("fivethirtyeight")
 
 # example text for model training (SMS messages)
 simple_train = ['call you tonight', 'Call me a cab', 'Please call me...PLEASE!']
 
 vect = CountVectorizer()
 vect.fit(simple_train)
-vect.get_feature_names_out()
+print(vect.get_feature_names_out())
 
+# transform training data into a 'documnets-term matrix'
+simple_train_dtm = vect.transform(simple_train)
+print(simple_train_dtm)
 
 
