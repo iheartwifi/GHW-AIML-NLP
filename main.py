@@ -17,5 +17,9 @@ print(vect.get_feature_names_out())
 # transform training data into a 'documnets-term matrix'
 simple_train_dtm = vect.transform(simple_train)
 print(simple_train_dtm)
+print(simple_train_dtm.toarray())
 
+# examine the vocabulary and document-term matrix together
+df = pd.DataFrame(simple_train_dtm.toarray(), columns=vect.get_feature_names_out ())
 
+print(df)
